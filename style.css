@@ -22,6 +22,7 @@ p {
 }
 h2 {
   font-size: 5rem;
+  text-decoration: underline;
 }
 h3 {
   font-size: 3rem;
@@ -34,7 +35,7 @@ h5 {
 /*Navigation Bar*/
 
 .mainHeader {
-  background-color: #171123;
+  background-color: #0d1124de;
 }
 
 .mainHeader nav {
@@ -60,6 +61,7 @@ h5 {
   justify-content: space-around;
   align-items: center;
 }
+
 #logo {
   flex: 1 1 20rem;
   font-family: "Amiri", serif;
@@ -68,11 +70,15 @@ h5 {
 
 /* arabic text intro section */
 .hero {
-  background-image: linear-gradient(rgba(66, 40, 25, 0.267), transparent);
-  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), transparent),
+    url(Images/firstBack.jpg);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .hero h2 {
   color: white;
@@ -120,29 +126,25 @@ h5 {
   background-color: rgb(17, 156, 68);
   transition: 0.4s ease-in-out;
 }
-
-/* about section*/
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* **** */
 /* image gallery*/
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 410px;
+  width: 810px;
   height: 410px;
   background-color: rgba(46, 44, 44, 0.075);
   border-radius: 10px;
+  animation: inverseHide 2s ease-in-out;
+  animation: colorchange 2s ease-in-out;
 }
 #slider {
   overflow: hidden;
   height: 400px;
-  width: 400px;
+  width: 800px;
   border-radius: 10px;
+  animation: 2s hideandseek ease-in-out;
 }
 #slider figure {
   position: relative;
@@ -155,7 +157,90 @@ h5 {
   width: 20%;
   float: left;
   height: 400px;
-  width: 400px;
+  width: 800px;
+}
+/********/
+/* about section*/
+
+.pencil {
+  width: 100vh;
+  position: absolute;
+  top: 107%;
+  scale: 0.3;
+  animation: slideInLeftPencil 10s ease-in-out infinite;
+}
+.line-1 {
+  position: absolute;
+  top: 113.5%;
+  right: 100%;
+  border: 2px solid rgb(8, 8, 8);
+  animation: pencilDraw 10s ease-in-out infinite;
+}
+
+/***** About us section */
+#about {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(214, 207, 207, 0.76), transparent),
+    url(Images/secondBack.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-head {
+  width: 90%;
+  margin: auto;
+}
+.about-head h2 {
+  padding: 1rem 1rem;
+  text-decoration: underline;
+}
+
+.about-head h3 {
+  padding: 2rem 1rem;
+}
+
+/* end of about section */
+
+/* animation section */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes showButton {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes hideandseek {
+  0% {
+    opacity: 0;
+    scale: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
 }
 @keyframes slider {
   0% {
@@ -187,42 +272,42 @@ h5 {
   }
 }
 
-/* animation section */
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes showButton {
+@keyframes inverseHide {
   0% {
     opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes hideandseek {
-  0% {
-    opacity: 0;
-    scale: 0;
-    transform: translateY(0);
+    scale: 1.5;
   }
   100% {
     opacity: 1;
     scale: 1;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: rgba(16, 56, 36, 0.384);
+  }
+  100% {
+    background-color: rgba(46, 44, 44, 0.075);
+  }
+}
+@keyframes slideInLeftPencil {
+  0% {
+    transform: translateX(-280%);
+  }
+  100% {
+    transform: translateX(414%);
+  }
+}
+@keyframes pencilDraw {
+  0% {
+    width: 0;
+    right: 123%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+    width: 288vh;
+    right: 15%;
   }
 }
