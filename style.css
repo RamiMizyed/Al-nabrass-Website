@@ -164,17 +164,21 @@ h5 {
 
 .pencil {
   width: 100vh;
-  position: absolute;
-  top: 107%;
-  scale: 0.3;
-  animation: slideInLeftPencil 10s ease-in-out infinite;
+  max-width: 100vh;
+  position: relative;
+  top: -55vh;
+
+  animation: slideInLeftPencil 15s ease-in-out infinite;
+  rotate: 75deg;
+  scale: 0.09;
 }
 .line-1 {
-  position: absolute;
-  top: 113.5%;
-  right: 100%;
+  position: relative;
+  top: -67vh;
   border: 2px solid rgb(8, 8, 8);
-  animation: pencilDraw 10s ease-in-out infinite;
+  width: 300vh;
+  left: -10%;
+  animation: 10s pencilDraw ease-in-out infinite;
 }
 
 /***** About us section */
@@ -187,6 +191,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .about-head {
   width: 90%;
@@ -200,7 +205,6 @@ h5 {
 .about-head h3 {
   padding: 2rem 1rem;
 }
-
 /* end of about section */
 
 /* animation section */
@@ -293,21 +297,23 @@ h5 {
 }
 @keyframes slideInLeftPencil {
   0% {
-    transform: translateX(-280%);
+    left: -100%;
   }
   100% {
-    transform: translateX(414%);
+    left: 100%;
   }
 }
 @keyframes pencilDraw {
   0% {
-    width: 0;
-    right: 123%;
-    opacity: 1;
+    border: 3px black solid;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.9;
+    border: 3px rgb(36, 31, 31) solid;
   }
   100% {
     opacity: 0.3;
-    width: 288vh;
-    right: 15%;
+    border: 3px black solid;
   }
 }
