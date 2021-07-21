@@ -22,7 +22,6 @@ p {
 }
 h2 {
   font-size: 5rem;
-  text-decoration: underline;
 }
 h3 {
   font-size: 3rem;
@@ -162,19 +161,8 @@ h5 {
 /********/
 /* about section*/
 
-.pencil {
-  width: 100vh;
-  max-width: 100vh;
-  position: relative;
-  top: -55vh;
-
-  animation: slideInLeftPencil 15s ease-in-out infinite;
-  rotate: 75deg;
-  scale: 0.09;
-}
 .line-1 {
   position: relative;
-  top: -67vh;
   border: 2px solid rgb(8, 8, 8);
   width: 300vh;
   left: -10%;
@@ -205,6 +193,11 @@ h5 {
 .about-head h3 {
   padding: 2rem 1rem;
 }
+.about-pic {
+  height: 500px;
+  width: 250px;
+}
+
 /* end of about section */
 
 /* animation section */
