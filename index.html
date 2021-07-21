@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="SVG icons/engineer1.png" />
@@ -54,21 +55,71 @@
     </section>
     <div class="line-1"></div>
     <section id="about">
-      <header class="about-head">
-        <h2>Lorem ipsum dolor sit amet,</h2>
-        <h3>
-          Lorem ipsum, dolor <br />Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Blanditiis qui atque debitis excepturi neque
-          explicabo mollitia
-          <img
-            src="Images/pexels-thirdman-5582867 (1).jpg"
-            alt=""
-            class="about-pic"
-          />
-        </h3>
+      <header class="main-header1">
+        <h1><span>Lorem, ipsum.</span> Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
       </header>
+      <main class="container-about">
+        <section class="card">
+          <img src="Images/1.jpg" alt="" />
+          <div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+          <img src="Images/2.jpg" alt="" />
+          <div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+          <img src="Images/3.jpg" alt="" />
+          <div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+          <img src="Images/4.jpg" alt="" />
+          <div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </section>
+      </main>
     </section>
-    <section id="contact"></section>
-    <footer><h2>Rami Mizyed</h2></footer>
+    <section id="contact">
+      <div class="contact-form">
+        <h1>contact Us</h1>
+        <div class="textb">
+          <label for=""> Full Name</label>
+          <input type="text" placeholder="Enter Name" />
+        </div>
+        <div class="textb">
+          <label for=""> Email</label>
+          <input type="email" placeholder="Example@something.com" />
+        </div>
+        <div class="textb">
+          <label for=""> Phone Number</label>
+          <input type="text" placeholder="+970" />
+        </div>
+        <div class="textb">
+          <label for=""> Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+        <a href="" class="btn">Send</a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 800,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>
