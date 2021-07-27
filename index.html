@@ -12,15 +12,11 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta name="robots" content="index,follow" />
-    <link rel="icon" href="SVG icons/engineer1.png" />
+    <link rel="icon" href="SVG_icons/engineer.png" />
     <link rel="stylesheet" href="style.css" />
 
     <title>مكتب النبراس الهندسي</title>
@@ -28,15 +24,18 @@
   <body>
     <header class="mainHeader">
       <nav>
-        <h1 id="logo">مكتب النبراس الهندسي</h1>
+        <a href="index.html" id="logo" ><img src="SVG_icons/engineer (1).png" alt=""></a>
+        
         <ul>
-          <li><a href="#home">الصفحه الرئيسيه </a></li>
-          <li><a href="#about"> عن الشركه</a></li>
-          <li><a href="#contact">تواصل معنا</a></li>
+          <li></li>
+          <li><a href="#about"> عنا </a></li>
+          <li><a href="#contact">تواصل </a></li>
+          <li><a href="">مشاريعنا</a></li>
         </ul>
       </nav>
     </header>
     <section class="hero">
+      
       <h2>مكتب النبراس الهندسي</h2>
       <h3>مكتب للهندسه و المقاولات في فلسطين <br /></h3>
       <div class="container">
@@ -51,73 +50,85 @@
         </div>
       </div>
 
-      <button>تواصل</button>
+      <a href="#contact" class="button">تواصل</a>
     </section>
     <div class="line-1"></div>
     <section id="about">
       <header class="main-header1">
-        <h1><span>Lorem, ipsum.</span> Lorem, ipsum.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <h1  data-aos="fade-left"><span>Lorem, ipsum.</span> Lorem, ipsum.</h1>
+        <p  data-aos="fade-right">Lorem ipsum dolor sit amet consectetur.</p>
       </header>
       <main class="container-about">
-        <section class="card">
-          <img src="Images/1.jpg" alt="" />
+        <section class="card" data-aos="fade-right">
+          <img src="Images/1.jpg" alt="" data-aos="fade-left" />
           <div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 data-aos="fade-left">Lorem, ipsum dolor.</h3>
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </section>
         <section class="card" data-aos="fade-left">
-          <img src="Images/2.jpg" alt="" />
+          <img src="Images/2.jpg" alt=""  data-aos="fade-left"/>
           <div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 data-aos="fade-right">Lorem, ipsum dolor.</h3>
+            <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </section>
         <section class="card" data-aos="fade-right">
-          <img src="Images/3.jpg" alt="" />
+          <img src="Images/3.jpg" alt="" data-aos="fade-left"/>
           <div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 data-aos="fade-left">Lorem, ipsum dolor.</h3>
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </section>
         <section class="card" data-aos="fade-left">
-          <img src="Images/4.jpg" alt="" />
+          <img src="Images/4.jpg" alt="" data-aos="fade-left"/>
           <div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h3 data-aos="fade-right">Lorem, ipsum dolor.</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </section>
       </main>
     </section>
+    <section id="projects">
+      <div class="maincard">
+        <div class="card-container">
+          <div class="card1" data-aos="zoom-in-left">
+            <img src="SVG_icons/architect.png" alt="" >
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam?</p>
+          </div>
+          <div class="card1" data-aos="zoom-in-right">
+            <img src="SVG_icons/cityscape.png" alt="">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam?</p>
+          </div>
+          <div class="card1" data-aos="zoom-in-left">
+            <img src="SVG_icons/apartment.png" alt="">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam?</p>
+          </div>
+          <div class="card1" data-aos="zoom-in-right">
+            <img src="SVG_icons/marketing.png" alt="">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam?</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contact">
-      <div class="contact-form">
-        <h1>contact Us</h1>
-        <div class="textb">
-          <label for=""> Full Name</label>
-          <input type="text" placeholder="Enter Name" />
+      <div class="contact-container">
+        <div class="contact-box">
+          <label for="">Name</label>
+          <input type="text" name="" id="">
         </div>
-        <div class="textb">
-          <label for=""> Email</label>
-          <input type="email" placeholder="Example@something.com" />
-        </div>
-        <div class="textb">
-          <label for=""> Phone Number</label>
-          <input type="text" placeholder="+970" />
-        </div>
-        <div class="textb">
-          <label for=""> Message</label>
-          <textarea name="" id=""></textarea>
-        </div>
-        <a href="" class="btn">Send</a>
       </div>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 300,
-        duration: 800,
+        offset: 200,
+        duration: 700,
         easing: "ease-in-out",
       });
     </script>
