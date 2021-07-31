@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="explain here after you learn" />
+    <script src="https://kit.fontawesome.com/b2c0cc8471.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,23 +15,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta name="robots" content="index,follow" />
+
     <link rel="icon" href="SVG_icons/engineer.png" />
     <link rel="stylesheet" href="style.css" />
+
 
     <title>مكتب النبراس الهندسي</title>
   </head>
   <body>
     <header class="mainHeader">
       <nav>
-        <a href="index.html" id="logo" ><img src="SVG_icons/engineer (1).png" alt=""></a>
+        <a href="index.html"  ><img src="SVG_icons/engineer (1).png" alt="" id="logo"></a>
         
         <ul>
           <li></li>
           <li><a href="#about"> عنا </a></li>
           <li><a href="#contact">تواصل </a></li>
-          <li><a href="">مشاريعنا</a></li>
+          <li><a href="#projects">مشاريعنا</a></li>
         </ul>
       </nav>
     </header>
@@ -50,7 +52,7 @@
         </div>
       </div>
 
-      <a href="#contact" class="button">تواصل</a>
+      <a href="#contact" class="button" data-aos="zoom-out-down">تواصل</a>
     </section>
     <div class="line-1"></div>
     <section id="about">
@@ -116,12 +118,72 @@
       </div>
     </section>
     <section id="contact">
-      <div class="contact-container">
-        <div class="contact-box">
-          <label for="">Name</label>
-          <input type="text" name="" id="">
+      <div class="contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vel ut facilis voluptas sequi aperiam officiis quisquam harum ab unde.</p>
         </div>
+        <div class="container2">
+          <div class="contactinfo">
+            <div class="box">
+               <img src="SVG_icons/telephone.svg" alt="" class="icon">
+              
+              <div class="text">
+                <h3>Phone</h3>
+                <p>903279756</p>
+              </div>
+            </div>
+            <div class="box">
+             <img src="SVG_icons/mail.svg" alt="" class="icon">
+  
+             
+              <div class="text">
+                <h3>Email</h3>
+                <p>Smthn@hasrt.com</p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="SVG_icons/address.svg" alt="" class="icon">
+              <div class="text">
+                <h3>Adress</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactForm">
+            <form action="">
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" required='required' >
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="email" required='required' >
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" required='required' >
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" >
+                <span>Phone Number</span>
+              </div>
+              <div class="inputBox">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <span>Message</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" id="" value="send">
+              </div>
+              
+            </form>
+          </div>
+        </div>
+       
+
       </div>
+     
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -130,7 +192,10 @@
         offset: 200,
         duration: 700,
         easing: "ease-in-out",
+        enable: 'mobile'
       });
     </script>
+
+
   </body>
 </html>
