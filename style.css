@@ -20,6 +20,7 @@ button,
 label,
 input,
 p {
+  
   font-size: 2rem;
 }
 h2 {
@@ -38,7 +39,7 @@ h5 {
 
 .mainHeader nav {
   color: white;
-  background-color: whitesmoke;
+  background-color: #003287;
   min-height: 10vh;
   display: flex;
   width: 100%;
@@ -49,13 +50,11 @@ h5 {
   flex-wrap: wrap;
 }
 .mainHeader a {
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-decoration: none;
   padding: 1rem 1rem;
-  margin: 0;
-  font-size: 8vh;
+  font-size: 3vw;
   font-weight: 800;
-  border: 2px transparent black; 
   border-radius: 10px;
 }
 
@@ -71,7 +70,7 @@ h5 {
 #logo {
   height: 10;
   width: 8vw;
-  background: whitesmoke;
+ 
 }
 
 /* arabic text intro section */
@@ -116,7 +115,7 @@ h5 {
   margin-top: 3rem;
   font-family: "Amiri", serif;
   padding: 2rem 4rem;
-  background-color: rgba(54, 132, 156, 0.904);
+  background-color: #174099;
   color: white;
   border-radius: 10px;
   animation-duration: 2s;
@@ -124,10 +123,7 @@ h5 {
   cursor: pointer;
   text-decoration: none;
 }
-.hero .button :hover {
-  background-color: rgb(17, 156, 68);
-  transition: 1s ease-in-out ;
-}
+
 /* **** */
 /* image gallery*/
 .container {
@@ -136,7 +132,7 @@ h5 {
   align-items: center;
   width: 61vw;
   height: 50vh;
-  background: repeating-linear-gradient(#ACB6B2,#B2ACB6);
+  background: #17409979;
   border-radius: 10px;
   animation: inverseHide 2s ease-in-out;
   box-shadow: 10px grey solid ;
@@ -203,12 +199,16 @@ h5 {
   height: 50vh;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  background: linear-gradient(rgba(8, 30, 155, 0.658),transparent);
+  background: #5661DB;
   margin-bottom: 10rem;
   overflow: hidden;
 }
 .card h3 {
+  color: #fff;
   margin-bottom: 5rem;
+}
+.card p{
+  color: #fff;
 }
 .card img {
   border-radius: 20px;
@@ -224,7 +224,7 @@ h5 {
   order: 2;
 }
 .card:nth-child(even){
-  background: linear-gradient(transparent,rgba(50, 5, 92, 0.705));
+  background: #174099;
 }
 
 @media (max-width: 700px) {
@@ -267,7 +267,7 @@ border-radius: 50px;
   border-radius: 3rem;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  background: linear-gradient(rgba(8, 30, 155, 0.658),transparent);
+  background: #003287;
   margin-bottom: 10rem;
   overflow: hidden;
   flex-direction: column;
@@ -278,6 +278,9 @@ border-radius: 50px;
 .card1 img{
   width: 20vh;
   height: 20vh;
+}
+.card1 p,h3{
+  color: #fff;
 }
 .card1:nth-child(even){
   background: linear-gradient(transparent,red);
@@ -319,6 +322,7 @@ border-radius: 50px;
   width: 40%;
   display: flex;
   flex-direction: column;
+  flex: 1 1rem;
 }
 .container2 .contactinfo .box{
   position: relative;
@@ -342,16 +346,17 @@ border-radius: 50px;
   font-weight: 400;
 }
 .contactForm{
+  border-radius:30px;
   width: 50%;
   padding: 5rem;
-  background: linear-gradient(red,transparent);
+  background: #4D5382;
 
 }
 .contactForm h2{
   font-size: 4rem;
   color: #fff;
-
 }
+
 .contactForm .inputBox{
   position: relative;
   width: 100%;
@@ -368,15 +373,29 @@ border-radius: 50px;
   padding: 5px 0;
   margin: 1rem 0;
 }
+
 .contactForm span{
+  color: #fff;
   font-size: 2rem;
 }
 /*** End of contact us Section */
 
+/*** Footer ***/
+footer{
+  display: flex;
+  text-align: start;
+}
+footer h2{
+  font-size: 2vw;
+}
+footer span{
+  padding-right: 10rem;
+}
+
 /* animation section */
 @keyframes slideInLeft {
   0% {
-    transform: translateX(-300%);
+    transform: translateX(-200%);
   }
   100% {
     transform: translateX(0);
@@ -385,7 +404,7 @@ border-radius: 50px;
 
 @keyframes slideInRight {
   0% {
-    transform: translateX(300%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
@@ -409,7 +428,6 @@ border-radius: 50px;
   }
   100% {
     opacity: 1;
-    scale: 1;
   }
 }
 @keyframes slider {
