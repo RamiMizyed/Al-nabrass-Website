@@ -199,7 +199,7 @@ h5 {
   height: 50vh;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  background: #5661DB;
+  background: #5661db83;
   margin-bottom: 10rem;
   overflow: hidden;
 }
@@ -224,7 +224,7 @@ h5 {
   order: 2;
 }
 .card:nth-child(even){
-  background: #174099;
+  background: #17409975;
 }
 
 @media (max-width: 700px) {
@@ -239,6 +239,12 @@ h5 {
   }
   .mainHeader ul{
     flex: 1 1 10vh;
+  }
+  .container2 .contactinfo .box .text p,h3{
+    transform: translateX(-12%);
+  }
+  footer h2{
+    transform: translateX(10%);
   }
 }
 /* end of about section */
@@ -267,7 +273,7 @@ border-radius: 50px;
   border-radius: 3rem;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  background: #003287;
+  background: #0031876c;
   margin-bottom: 10rem;
   overflow: hidden;
   flex-direction: column;
@@ -283,7 +289,7 @@ border-radius: 50px;
   color: #fff;
 }
 .card1:nth-child(even){
-  background: rgba(10, 182, 33, 0.699);
+  background: rgba(10, 182, 33, 0.384);
 }
 .card1:nth-child(even) p,h2,h3{
   color: black;
@@ -336,6 +342,7 @@ border-radius: 50px;
   padding: 3rem;
 }
 .container2 .contactinfo .box .icon{
+  transform: translateX(30%);
   min-width: 60px;
   height: 59px;
   background: #fff;
@@ -348,10 +355,10 @@ border-radius: 50px;
 .container2 .contactinfo .box .text{
   display: flex;
   margin-left: 2rem;
-  font-size: 3rem;
   flex-direction: column;
   font-weight: 800;
 }
+
 .contactForm{
   border-radius:30px;
   width: 50%;
@@ -398,13 +405,12 @@ border-radius: 50px;
 footer{
   display: flex;
   text-align: start;
-  align-items: center;
   justify-content: space-around;
   background: rgba(0, 0, 0, 0.548);
 }
 footer h2{
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 footer span{
   color: whitesmoke;
