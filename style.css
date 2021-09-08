@@ -289,7 +289,7 @@ border-radius: 50px;
   color: #fff;
 }
 .card1:nth-child(even){
-  background: rgba(10, 182, 33, 0.384);
+  background: rgba(25, 11, 77, 0.384);
 }
 .card1:nth-child(even) p,h2,h3{
   color: black;
@@ -345,7 +345,7 @@ border-radius: 50px;
   transform: translateX(30%);
   min-width: 60px;
   height: 59px;
-  background: #fff;
+  background: rgba(252, 251, 251, 0.826);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,7 +363,7 @@ border-radius: 50px;
   border-radius:30px;
   width: 50%;
   padding: 5rem;
-  background: -webkit-linear-gradient(rgba(54, 132, 156, 0.904),rgb(17, 17, 109));
+  background: -webkit-linear-gradient(rgba(27, 61, 71, 0.904),rgb(17, 106, 109));
 
 }
 .contactForm h2{
@@ -378,17 +378,28 @@ border-radius: 50px;
   margin-top: 10px;
 }
 .contactForm .inputBox input{
+  border-radius: 10px;
   width: 100%;
   padding: 5px 0;
   font-size: 2rem;
   margin: 1rem 0;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.314);
 }
 .contactForm .inputBox textarea{
   width: 100%;
+  border-radius: 10px;
   padding: 5px 0;
   margin: 1rem 0;
+  font-size: 2rem;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.314);
 }
 
+.contactForm .inputBox #submit{
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.314);
+}
 .contactForm .inputBox #submit:hover{
   background: rgb(128, 197, 25);
   color: white;
@@ -403,9 +414,11 @@ border-radius: 50px;
 
 /*** Footer ***/
 footer{
+  height: 3rem;
   display: flex;
   text-align: start;
   justify-content: space-around;
+  align-items: center;
   background: rgba(0, 0, 0, 0.548);
 }
 footer h2{
