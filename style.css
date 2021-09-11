@@ -132,7 +132,7 @@ h5 {
   align-items: center;
   width: 61vw;
   height: 50vh;
-  background: #17409979;
+  background: #040b1a79;
   border-radius: 10px;
   animation: inverseHide 2s ease-in-out;
   box-shadow: 10px grey solid ;
@@ -199,7 +199,7 @@ h5 {
   height: 50vh;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  background: #5661db83;
+  background: #050a3d83;
   margin-bottom: 10rem;
   overflow: hidden;
 }
@@ -224,7 +224,7 @@ h5 {
   order: 2;
 }
 .card:nth-child(even){
-  background: #17409975;
+  background: #010e2b75;
 }
 
 @media (max-width: 700px) {
@@ -510,25 +510,3 @@ footer span{
 }
 
 
-@keyframes slideInLeftPencil {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-@keyframes pencilDraw {
-  0% {
-    border: 3px black solid;
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.9;
-    border: 3px rgb(36, 31, 31) solid;
-  }
-  100% {
-    opacity: 0.3;
-    border: 3px black solid;
-  }
-}
